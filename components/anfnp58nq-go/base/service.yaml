@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: anfnp58nq-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: anfnp58nq-go 
+  name: anfnp58nq-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: anfnp58nq-go 
